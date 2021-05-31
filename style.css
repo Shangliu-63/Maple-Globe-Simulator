@@ -5,31 +5,89 @@ h1,p{
     color:azure;
 }
 #mainview{
-    margin: 50px 50px 50px 100px;
+    width: 400px;
+    height: 400px;
+    margin:  auto 10%;
     position: relative;
 }
 #select{
-    margin: 400px 0px 0px 20px;
+    margin: 0px 0px 0px 50px;
     position: relative;
 }
-#backglass{
-    position: absolute;
-    z-index: -3;
-}
-#tree{
-    position:absolute;
-    z-index: -1;
-}
-#character{
-    margin: 161px 0px 0px 113px;
-    position: absolute;
+#glassBackImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;
+    margin: auto;
     z-index: 0;
 }
-#frontglass{
-    position: absolute;
+#treeImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    margin:69.5% auto;
+
     z-index: 1;
 }
-#base{
-    position: absolute;
+#characterImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    margin:53.5% auto auto 41%;
+
     z-index: 2;
+}
+#glassFrontImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    margin: auto;
+    z-index: 3;
+}
+#baseImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    margin:77% auto;
+    z-index: 4;
 }

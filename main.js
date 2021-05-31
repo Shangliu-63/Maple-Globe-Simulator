@@ -1,8 +1,3 @@
-$("#glassBackImg").attr("style"," margin: 15px 0px 0px 15px");
-$("#treeImg").attr("style","margin: 225px 0px 0px 52px");
-$("#glassFrontImg").attr("style"," margin: 0px 0px 0px 0px");
-$("#baseImg").attr("style","margin: 255px 0px 0px 39px" );
-
 $(function(){
     
     $("#baseSelect").on("change", function(){
@@ -26,22 +21,11 @@ $(function(){
             case 1:
                 $("#glassBackImg").attr("src","glass/default/defaults_b.png");
                 $("#glassFrontImg").attr("src","glass/default/defaults_f.png");
-                $("#glassBackImg").attr("style"," margin: 15px 0px 0px 15px");
-                $("#glassFrontImg").attr("style"," margin: 0px 0px 0px 0px");
                 break;
             case 2:
                 $("#glassBackImg").attr("src","glass/red/redglass_b.png");
                 $("#glassFrontImg").attr("src","glass/red/redglass_f.png");
-                $("#glassBackImg").attr("style"," margin: 15px 0px 0px 15px");
-                $("#glassFrontImg").attr("style"," margin: 0px 0px 0px 0px");
                 break;
-            case 3:
-                $("#glassBackImg").attr("src","glass/yellow/yellowglass_b.png");
-                $("#glassFrontImg").attr("src","glass/yellow/yellowglass_f.png");
-                $("#glassBackImg").attr("style"," margin: 15px 0px 0px 15px");
-                $("#glassFrontImg").attr("style"," margin: 0px 0px 0px 0px");
-                break;
-
             default:
                 alert("none of this glass name");
                 break;
@@ -52,27 +36,27 @@ $(function(){
         switch(glassValue){
             case 1:
                 $("#treeImg").attr("src","tree/default.png");
-                $("#treeImg").attr("style","margin: 225px 0px 0px 52px");
+                $("#treeImg").attr("style","margin: 69.5% auto");
                 break;
             case 2:
                 $("#treeImg").attr("src","tree/juniper.png");
-                $("#treeImg").attr("style","margin: 43px 0px 0px 55px");
+                $("#treeImg").attr("style","margin: 24% auto auto 26.5%");
                 break;
             case 3:
                 $("#treeImg").attr("src","tree/MuLung.png");
-                $("#treeImg").attr("style","margin: 81px 0px 0px 38px");
+                $("#treeImg").attr("style","margin: 30% auto auto 22%");
                 break;
             case 4:
                 $("#treeImg").attr("src","tree/baobab.png");
-                $("#treeImg").attr("style","margin: 46px 0px 0px 46px");
+                $("#treeImg").attr("style","margin: 43px 0px 0px 55px");
                 break;
             case 5:
                 $("#treeImg").attr("src","tree/apple.png");
-                $("#treeImg").attr("style","margin: 59px 0px 0px 55px");
+                $("#treeImg").attr("style","margin: 81px 0px 0px 38px");
                 break;
             case 6:
                 $("#treeImg").attr("src","tree/willow.png");
-                $("#treeImg").attr("style","margin: 63px 0px 0px 55px");
+                $("#treeImg").attr("style","margin: 46px 0px 0px 46px");
                 break;
             case 7:
                 $("#treeImg").attr("src","tree/jacaranda.png");
@@ -80,7 +64,7 @@ $(function(){
                 break;
             case 8:
                 $("#treeImg").attr("src","tree/maple.png");
-                $("#treeImg").attr("style","margin: 47px 0px 0px 31px");
+                $("#treeImg").attr("style","margin: 59px 0px 0px 55px");
                 break;
             case 9:
                 $("#treeImg").attr("src","tree/cherry.png");
