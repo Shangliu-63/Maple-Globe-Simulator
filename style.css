@@ -5,11 +5,12 @@ h1,p{
     color:azure;
 }
 #mainview{
-    margin: 100px 50px 50px 100px;
+    margin: 50px 50px 50px 100px;
     position: relative;
 }
 #select{
-    margin: 0px 0px 0px 100px;
+    margin: 400px 0px 0px 20px;
+    position: relative;
 }
 #backglass{
     position: absolute;
@@ -20,7 +21,7 @@ h1,p{
     z-index: -1;
 }
 #character{
-    margin: -141px 0px 0px 113px;
+    margin: 161px 0px 0px 113px;
     position: absolute;
     z-index: 0;
 }
