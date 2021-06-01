@@ -343,4 +343,58 @@ $(function(){
         };
     });
 
+    $("#effectSelect").on("change", function(){
+        let effectValue = parseInt($(this).val());
+        switch(effectValue){
+            case 0:
+                $("#effectImg").attr("src","");
+                //$("#figure2Img").attr("style","margin: auto");
+                break;
+            case 1:
+                $("#effectImg").attr("src","effect/maple.png");
+                //$("#figure2Img").attr("style","margin: 65.5% auto auto 58%");
+                break;
+            case 2:
+                $("#effectImg").attr("src","figure2/veti.png");
+                //$("#figure2Img").attr("style","margin: 60% auto auto 56%");
+                break;
+            case 3:
+                $("#effectImg").attr("src","figure2/pk.png");
+                //$("#figure2Img").attr("style","margin: 63.5% auto auto 58%");
+                break;
+            case 4:
+                $("#effectImg").attr("src","figure2/von.png");
+                //$("#figure2Img").attr("style","margin: 59.5% auto auto 56%");
+                break;
+            case 5:
+                $("#effectImg").attr("src","figure2/mercedes.png");
+                //$("#figure2Img").attr("style","margin: 61.25% auto auto 57%");
+                break;
+            case 6:
+                $("#effectImg").attr("src","figure2/lumi.png");
+                //$("#figure2Img").attr("style","margin: 60.5% auto auto 56.25%");
+                break;
+            case 7:
+                $("#effectImg").attr("src","figure2/shade.png");
+               // $("#figure2Img").attr("style","margin: 60.5% auto auto 56.5%");
+                break;
+            case 8:
+                $("#effectImg").attr("src","figure2/magnus.png");
+                //$("#figure2Img").attr("style","margin: 59.75% auto auto 54.75%");
+                break;
+            case 9:
+                $("#effectImg").attr("src","figure2/cygnus.png");
+                //$("#figure2Img").attr("style","margin: 61.5% auto auto 56.5%");
+                break;
+            case 10:
+                $("#effectImg").attr("src","figure2/orchid.png");
+               // $("#figure2Img").attr("style","margin: 61% auto auto 55.5%");
+                break;
+            default:
+                alert("none of this figure1 name");
+                break;
+        };
+    });
+
+
 });
