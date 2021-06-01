@@ -457,6 +457,7 @@ $(function(){
         };
         let bgmVol = $("#volSlider").slider("value");
         $("#bgm")[0].volume = (bgmVol/100);
+        $("#bgm")[0].loop = true;
         $("#bgm")[0].play();
         $("#controlPlay").attr("value","||");
     });
