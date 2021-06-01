@@ -437,24 +437,26 @@ $(function(){
                 $("#bgm").attr("src","music/TheWaytoHope_MR.mp3");
                 break;
             case 16:
-                $("#bgm").attr("src","music/bubble.mp3");
+                $("#bgm").attr("src","music/WayBackHome.mp3");
                 break;
             case 17:
-                $("#bgm").attr("src","music/whitedust.mp3");
+                $("#bgm").attr("src","music/EveningPrimrose.mp3");
                 break;
             case 18:
-                $("#bgm").attr("src","music/bluedust.mp3");
+                $("#bgm").attr("src","music/Lake Of Oblivion.mp3");
                 break;
             case 19:
-                $("#bgm").attr("src","music/mote.mp3");
+                $("#bgm").attr("src","music/TheTuneOfAzureLight.mp3");
                 break;
             case 20:
-                $("#bgm").attr("src","music/fragment.mp3");
+                $("#bgm").attr("src","music/SoupOfLife.mp3");
                 break;
             default:
                 alert("none of this bgm name");
                 break;
         };
+        let bgmVol = $("#volSlider").slider("value");
+        $("#bgm")[0].volume = (bgmVol/100);
         $("#bgm")[0].play();
         $("#controlPlay").attr("value","||");
     });
@@ -492,5 +494,4 @@ $(function(){
           musicOp.volume = (bgmVol/100);
         }
     });
-    
 });
