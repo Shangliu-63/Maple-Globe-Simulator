@@ -1,6 +1,6 @@
 $(function(){
     $("#characterAppear").on("click",function(){
-        $("#characterImg").attr("src","character/character.png");
+        $("#characterImg").attr("src","character/model.png");
     });
     $("#characterHide").on("click",function(){
         $("#characterImg").attr("src","");
