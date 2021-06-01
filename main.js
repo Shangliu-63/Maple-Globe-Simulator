@@ -123,8 +123,8 @@ $(function(){
     });
 
     $("#treeSelect").on("change", function(){
-        let glassValue = parseInt($(this).val());
-        switch(glassValue){
+        let treeValue = parseInt($(this).val());
+        switch(treeValue){
             case 1:
                 $("#treeImg").attr("src","tree/default.png");
                 $("#treeImg").attr("style","margin: 69.5% auto");
@@ -177,8 +177,8 @@ $(function(){
     });
 
     $("#chairSelect").on("change", function(){
-        let glassValue = parseInt($(this).val());
-        switch(glassValue){
+        let chairValue = parseInt($(this).val());
+        switch(chairValue){
             case 0:
                 $("#chairImg").attr("src","");
                 $("#chairImg").attr("style","margin: auto");
@@ -229,5 +229,118 @@ $(function(){
         };
     });
 
+    $("#figure1Select").on("change", function(){
+        let figure1Value = parseInt($(this).val());
+        switch(figure1Value){
+            case 0:
+                $("#figure1Img").attr("src","");
+                $("#figure1Img").attr("style","margin: auto");
+                break;
+            case 1:
+                $("#figure1Img").attr("src","figure1/orangemushroom.png");
+                $("#figure1Img").attr("style","margin: 63.5% auto auto 30%");
+                break;
+            case 2:
+                $("#figure1Img").attr("src","figure1/ribbonpig.png");
+                $("#figure1Img").attr("style","margin: 64.5% auto auto 30%");
+                break;
+            case 3:
+                $("#figure1Img").attr("src","figure1/pepe.png");
+                $("#figure1Img").attr("style","margin: 63% auto auto 31%");
+                break;
+            case 4:
+                $("#figure1Img").attr("src","figure1/neinheart.png");
+                $("#figure1Img").attr("style","margin: 61.75% auto auto 31%");
+                break;
+            case 5:
+                $("#figure1Img").attr("src","figure1/aran.png");
+                $("#figure1Img").attr("style","margin: 59.75% auto auto 30.5%");
+                break;
+            case 6:
+                $("#figure1Img").attr("src","figure1/evan.png");
+                $("#figure1Img").attr("style","margin: 60.75% auto auto 30.25%");
+                break;
+            case 7:
+                $("#figure1Img").attr("src","figure1/alicia.png");
+                $("#figure1Img").attr("style","margin: 61% auto auto 27.5%");
+                break;
+            case 8:
+                $("#figure1Img").attr("src","figure1/hilla.png");
+                $("#figure1Img").attr("style","margin: 61.5% auto auto 30%");
+                break;
+            case 9:
+                $("#figure1Img").attr("src","figure1/phantom.png");
+                $("#figure1Img").attr("style","margin: 60.5% auto auto 29.25%");
+                break;
+            case 10:
+                $("#figure1Img").attr("src","figure1/lotus.png");
+                $("#figure1Img").attr("style","margin: 61.25% auto auto 30.5%");
+                break;
+            case 11:
+                $("#figure1Img").attr("src","figure1/lucid.png");
+                $("#figure1Img").attr("style","margin: 60.25% auto auto 29.25%");
+                break;
+            default:
+                alert("none of this figure1 name");
+                break;
+        };
+    });
+
+    $("#figure2Select").on("change", function(){
+        let figure2Value = parseInt($(this).val());
+        switch(figure2Value){
+            case 0:
+                $("#figure2Img").attr("src","");
+                $("#figure2Img").attr("style","margin: auto");
+                break;
+            case 1:
+                $("#figure2Img").attr("src","figure2/slime.png");
+                $("#figure2Img").attr("style","margin: 65.5% auto auto 58%");
+                break;
+            case 2:
+                $("#figure2Img").attr("src","figure2/veti.png");
+                $("#figure2Img").attr("style","margin: 60% auto auto 56%");
+                break;
+            case 3:
+                $("#figure2Img").attr("src","figure2/pk.png");
+                $("#figure2Img").attr("style","margin: 63.5% auto auto 58%");
+                break;
+            case 4:
+                $("#figure2Img").attr("src","figure2/von.png");
+                $("#figure2Img").attr("style","margin: 59.5% auto auto 56%");
+                break;
+            case 5:
+                $("#figure2Img").attr("src","figure2/mercedes.png");
+                $("#figure2Img").attr("style","margin: 61.25% auto auto 57%");
+                break;
+            case 6:
+                $("#figure2Img").attr("src","figure2/lumi.png");
+                $("#figure2Img").attr("style","margin: 60.5% auto auto 56.25%");
+                break;
+            case 7:
+                $("#figure2Img").attr("src","figure2/shade.png");
+                $("#figure2Img").attr("style","margin: 60.5% auto auto 56.5%");
+                break;
+            case 8:
+                $("#figure2Img").attr("src","figure2/magnus.png");
+                $("#figure2Img").attr("style","margin: 59.75% auto auto 54.75%");
+                break;
+            case 9:
+                $("#figure2Img").attr("src","figure2/cygnus.png");
+                $("#figure2Img").attr("style","margin: 61.5% auto auto 56.5%");
+                break;
+            case 10:
+                $("#figure2Img").attr("src","figure2/orchid.png");
+                $("#figure2Img").attr("style","margin: 61% auto auto 55.5%");
+                break;
+            case 11:
+                $("#figure2Img").attr("src","figure2/damien.png");
+                $("#figure2Img").attr("style","margin: 59.5% auto auto 57%");
+                break;
+            default:
+                alert("none of this figure1 name");
+                break;
+        };
+    });
 
 });
