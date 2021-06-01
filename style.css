@@ -152,3 +152,9 @@ h1,p{
     z-index: 7;
 
 }
+
+#volSlider{
+    height:10px;
+    width:100px;
+    color: gray;
+}

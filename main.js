@@ -348,47 +348,36 @@ $(function(){
         switch(effectValue){
             case 0:
                 $("#effectImg").attr("src","");
-                //$("#figure2Img").attr("style","margin: auto");
                 break;
             case 1:
                 $("#effectImg").attr("src","effect/maple.png");
-                //$("#figure2Img").attr("style","margin: 65.5% auto auto 58%");
                 break;
             case 2:
-                $("#effectImg").attr("src","figure2/veti.png");
-                //$("#figure2Img").attr("style","margin: 60% auto auto 56%");
+                $("#effectImg").attr("src","effect/cherry.png");
                 break;
             case 3:
-                $("#effectImg").attr("src","figure2/pk.png");
-                //$("#figure2Img").attr("style","margin: 63.5% auto auto 58%");
+                $("#effectImg").attr("src","effect/leaf.png");
                 break;
             case 4:
-                $("#effectImg").attr("src","figure2/von.png");
-                //$("#figure2Img").attr("style","margin: 59.5% auto auto 56%");
+                $("#effectImg").attr("src","effect/yellowdust.png");
                 break;
             case 5:
-                $("#effectImg").attr("src","figure2/mercedes.png");
-                //$("#figure2Img").attr("style","margin: 61.25% auto auto 57%");
+                $("#effectImg").attr("src","effect/snowflake.png");
                 break;
             case 6:
-                $("#effectImg").attr("src","figure2/lumi.png");
-                //$("#figure2Img").attr("style","margin: 60.5% auto auto 56.25%");
+                $("#effectImg").attr("src","effect/bubble.png");
                 break;
             case 7:
-                $("#effectImg").attr("src","figure2/shade.png");
-               // $("#figure2Img").attr("style","margin: 60.5% auto auto 56.5%");
+                $("#effectImg").attr("src","effect/whitedust.png");
                 break;
             case 8:
-                $("#effectImg").attr("src","figure2/magnus.png");
-                //$("#figure2Img").attr("style","margin: 59.75% auto auto 54.75%");
+                $("#effectImg").attr("src","effect/bluedust.png");
                 break;
             case 9:
-                $("#effectImg").attr("src","figure2/cygnus.png");
-                //$("#figure2Img").attr("style","margin: 61.5% auto auto 56.5%");
+                $("#effectImg").attr("src","effect/mote.png");
                 break;
             case 10:
-                $("#effectImg").attr("src","figure2/orchid.png");
-               // $("#figure2Img").attr("style","margin: 61% auto auto 55.5%");
+                $("#effectImg").attr("src","effect/fragment.png");
                 break;
             default:
                 alert("none of this figure1 name");
@@ -396,5 +385,112 @@ $(function(){
         };
     });
 
+    $("#bgmSelect").on("change", function(){
+        let bgmValue = parseInt($(this).val());
+        switch(bgmValue){
+            case 0:
+                $("#bgm").attr("src","");
+                break;
+            case 1:
+                $("#bgm").attr("src","music/FloralLife.mp3");
+                break;
+            case 2:
+                $("#bgm").attr("src","music/WhenTheMorningComes.mp3");
+                break;
+            case 3:
+                $("#bgm").attr("src","music/SecretElodin.mp3");
+                break;
+            case 4:
+                $("#bgm").attr("src","music/WindAndFlower.mp3");
+                break;
+            case 5:
+                $("#bgm").attr("src","music/QueensGarden.mp3");
+                break;
+            case 6:
+                $("#bgm").attr("src","music/RaindropFlower.mp3");
+                break;
+            case 7:
+                $("#bgm").attr("src","music/Shinin'Harbor.mp3");
+                break;
+            case 8:
+                $("#bgm").attr("src","music/Title.mp3");
+                break;
+            case 9:
+                $("#bgm").attr("src","music/CygnusGarden.mp3");
+                break;
+            case 10:
+                $("#bgm").attr("src","music/Asylum.mp3");
+                break;
+            case 11:
+                $("#bgm").attr("src","music/RabbitsDream.mp3");
+                break;
+            case 12:
+                $("#bgm").attr("src","music/TimeTemple.mp3");
+                break;
+            case 13:
+                $("#bgm").attr("src","music/SwampOfMemoryMoras.mp3");
+                break;
+            case 14:
+                $("#bgm").attr("src","music/LegendOfZipang_Silence.mp3");
+                break;
+            case 15:
+                $("#bgm").attr("src","music/TheWaytoHope_MR.mp3");
+                break;
+            case 16:
+                $("#bgm").attr("src","music/bubble.mp3");
+                break;
+            case 17:
+                $("#bgm").attr("src","music/whitedust.mp3");
+                break;
+            case 18:
+                $("#bgm").attr("src","music/bluedust.mp3");
+                break;
+            case 19:
+                $("#bgm").attr("src","music/mote.mp3");
+                break;
+            case 20:
+                $("#bgm").attr("src","music/fragment.mp3");
+                break;
+            default:
+                alert("none of this bgm name");
+                break;
+        };
+        $("#bgm")[0].play();
+        $("#controlPlay").attr("value","||");
+    });
+    let musicOp = $("#bgm")[0];
+    $("#controlPlay").on("click",function(){
+        if($(this)[0].value=="||"){
+            musicOp.pause();
+            $(this).attr("value","▶");
+        }
+        else if($(this)[0].value=="▶"){
+            musicOp.play();
+            $(this).attr("value","||");
+        }
+    });
+    $("#stop").on("click",function(){
+        musicOp.pause();
+        musicOp.currentTime = 0;
+        $("#controlPlay").attr("value","▶");
+    });
 
+    $("#volSlider").slider({
+        min: 0, 
+        max: 100,
+        step: 1,
+        value: 30,
+        create: function(e, ui) {
+          var style={"width":"30px","text-align":"center"};
+          $(this).find(".ui-slider-handle").css(style);
+          css();
+          },
+        slide: function(e, ui) {
+          $("#hslider_value").html(ui.value);
+          $(this).find(".ui-slider-handle").html(ui.value);
+          let bgmVol = $("#volSlider").slider("value");
+          musicOp.volume = (bgmVol/100);
+        }
+    });
+    
 });
