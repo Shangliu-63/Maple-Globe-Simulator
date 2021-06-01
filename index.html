@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     </head>
     <body>
         <h1>楓之谷星球模擬器 / Maple Globe Simulator</h1>
@@ -26,6 +27,10 @@
             <p>
                 <input type="button" value="人物顯示 / Display Character" id="characterAppear"/>
                 <input type="button" value=" 人物隱藏 / Hide Character  " id="characterHide"/>
+            </p>
+            <p>
+                <!--<input type="button" value="下載 / Download" id="downloadImg"/>-->
+                <!--<input type="button" value="隨機 / Random" id="RandomImg"/>-->
             </p>
             <p>
                 玻璃 / Glass
@@ -167,7 +172,7 @@
                     <option value="19">(S)阿爾卡娜 / The Tune Of Azure Light</option>
                     <option value="20">(S)艾斯佩拉 / Soup Of Life</option>
                 </select>
-                <audio  src="music/TimeTemple.mp3" type="audio/mp3" id="bgm"></audio>
+                <audio  src="" type="audio/mp3" id="bgm"></audio>
                 <input type="button" value="▶" id="controlPlay"/>
                 <input type="button" value="∎" id="stop"/>
                 <div id="volSlider"></div>

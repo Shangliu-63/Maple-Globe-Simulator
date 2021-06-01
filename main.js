@@ -5,6 +5,16 @@ $(function(){
     $("#characterHide").on("click",function(){
         $("#characterImg").attr("src","");
     });
+    /*$("#downloadImg").on("click",function(){
+        html2canvas($("#mainview"),{
+            onrendered:function(canvas){
+            varlink=document.createElement('a');
+            link.download='my-image-name.png';
+            link.href=canvas.toDataURL();
+            link.click();
+            }
+        });
+    });*/
 
     $("#baseSelect").on("change", function(){
         let baseValue = parseInt($(this).val());
@@ -459,17 +469,17 @@ $(function(){
         $("#bgm")[0].volume = (bgmVol/100);
         $("#bgm")[0].loop = true;
         $("#bgm")[0].play();
-        $("#controlPlay").attr("value","||");
+        $("#controlPlay").attr("value","▷");
     });
     let musicOp = $("#bgm")[0];
     $("#controlPlay").on("click",function(){
-        if($(this)[0].value=="||"){
+        if($(this)[0].value=="▷"){
             musicOp.pause();
             $(this).attr("value","▶");
         }
         else if($(this)[0].value=="▶"){
             musicOp.play();
-            $(this).attr("value","||");
+            $(this).attr("value","▷");
         }
     });
     $("#stop").on("click",function(){
