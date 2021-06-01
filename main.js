@@ -26,15 +26,15 @@ $(function(){
                 break;
             case 4:
                 $("#baseImg").attr("src","base/simplePinkBase.png");
-                $("#baseImg").attr("style","margin: 77% auto");
+                $("#baseImg").attr("style","margin: 75.5% 23.5%");
                 break;
             case 5:
                 $("#baseImg").attr("src","base/simpleYellowBase.png");
-                $("#baseImg").attr("style","margin: 77% auto");
+                $("#baseImg").attr("style","margin: 75.5% 23.5%");
                 break;
             case 6:
                 $("#baseImg").attr("src","base/simpleSkyblueBase.png");
-                $("#baseImg").attr("style","margin: 77% auto");
+                $("#baseImg").attr("style","margin: 75.5% 23.5%");
                 break;
             case 7:
                 $("#baseImg").attr("src","base/FluffyCloudBase.png");
@@ -121,6 +121,7 @@ $(function(){
                 break;
         };
     });
+
     $("#treeSelect").on("change", function(){
         let glassValue = parseInt($(this).val());
         switch(glassValue){
@@ -174,5 +175,59 @@ $(function(){
                 break;
         };
     });
+
+    $("#chairSelect").on("change", function(){
+        let glassValue = parseInt($(this).val());
+        switch(glassValue){
+            case 0:
+                $("#chairImg").attr("src","");
+                $("#chairImg").attr("style","margin: auto");
+                break;
+            case 1:
+                $("#chairImg").attr("src","chair/smallrock.png");
+                $("#chairImg").attr("style","margin: 68.5% auto auto 46%");
+                break;
+            case 2:
+                $("#chairImg").attr("src","chair/smallmushroom.png");
+                $("#chairImg").attr("style","margin: 66.5% auto auto 46%");
+                break;
+            case 3:
+                $("#chairImg").attr("src","chair/smallbench.png");
+                $("#chairImg").attr("style","margin: 63% auto auto 43%");
+                break;
+            case 4:
+                $("#chairImg").attr("src","chair/smallstump.png");
+                $("#chairImg").attr("style","margin: 63.5% auto auto 43%");
+                break;
+            case 5:
+                $("#chairImg").attr("src","chair/campingchair.png");
+                $("#chairImg").attr("style","margin: 61% auto auto 44%");
+                break;
+            case 6:
+                $("#chairImg").attr("src","chair/smallmat.png");
+                $("#chairImg").attr("style","margin: 64% auto auto 38%");
+                break;
+            case 7:
+                $("#chairImg").attr("src","chair/cushion.png");
+                $("#chairImg").attr("style","margin: 63% auto auto 47%");
+                break;
+            case 8:
+                $("#chairImg").attr("src","chair/softcloud.png");
+                $("#chairImg").attr("style","margin: 64.5% auto auto 47%");
+                break;
+            case 9:
+                $("#chairImg").attr("src","chair/toycar.png");
+                $("#chairImg").attr("style","margin: 66% auto auto 45%; z-index: 5");
+                break;
+            case 10:
+                $("#chairImg").attr("src","chair/swingchair.png");
+                $("#chairImg").attr("style","margin: 48% auto auto 46%");
+                break;
+            default:
+                alert("none of this chair name");
+                break;
+        };
+    });
+
 
 });

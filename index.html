@@ -6,66 +6,139 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>楓之谷星球 / Maple Globe</h1>
+        <h1>楓之谷星球模擬器 / Maple Globe Simulator</h1>
         <div class="mainview" id="mainview">
                 <img id="glassBackImg" src="glass/default/defaults_b.png">
                 <img id="treeImg" src="tree/default.png">
                 <img id="glassFrontImg" src="glass/default/defaults_f.png"><!---->
                 <img id="characterImg" src="character/character.png">
-                <img id="baseImg" src="base/default.png"><!----> 
+                <img id="baseImg" src="base/default.png"><!---->
+                <img id="chairImg" src="">
+                <img id="effectImg" src=>
+                <img id="figure1Img" src="">
+                <img id="figure2Img" src="">
         </div>
         <div class="select" id="select">
             <p>
-                <input type="button" value="人物顯示" id="characterAppear"/>
-                <input type="button" value="人物隱藏" id="characterHide"/>
+                <input type="button" value="人物顯示 / Display Character" id="characterAppear"/>
+                <input type="button" value=" 人物隱藏 / Hide Character  " id="characterHide"/>
             </p>
-            <p>玻璃
+            <p>
+                玻璃 / Glass
                 <select id="glassSelect">
-                    <option value="1" selected="selected">預設透明玻璃</option>
-                    <option value="2">(B)紅色玻璃</option>
-                    <option value="3">(B)黃色玻璃</option>
-                    <option value="4">(B)藍色玻璃</option>
-                    <option value="5">(B)暗色玻璃</option>
-                    <option value="6">(A)閃爍的紅色玻璃</option>
-                    <option value="7">(A)閃爍的黃色玻璃</option>
-                    <option value="8">(S)閃爍的藍色玻璃</option>
-                    <option value="9">(S)閃爍的透明玻璃</option>
-                    <option value="10">(S)閃爍的暗色玻璃</option>
+                    <option value="1" selected="selected">預設透明玻璃 / Default</option>
+                    <option value="2">(B)紅色玻璃 / Red</option>
+                    <option value="3">(B)黃色玻璃 / Yellow</option>
+                    <option value="4">(B)藍色玻璃 / Sky Blue</option>
+                    <option value="5">(B)暗色玻璃 / Dark</option>
+                    <option value="6">(A)閃爍的紅色玻璃 / Sparkling Red</option>
+                    <option value="7">(A)閃爍的黃色玻璃 / Sparkling Yellow</option>
+                    <option value="8">(S)閃爍的藍色玻璃 / Sparkling Sky Blue</option>
+                    <option value="9">(S)閃爍的透明玻璃 / Sparkling Transparent</option>
+                    <option value="10">(S)閃爍的暗色玻璃 / Sparkling Dark</option>
                     
                 </select>
             </p>
-            <p>樹木
+            <p>
+                樹木 / Trees
                 <select id="treeSelect">
-                    <option value="1" selected="selected">預設樹木</option>
-                    <option value="2">(B)鬱鬱杜松</option>
-                    <option value="3">(B)武陵檀香</option>
-                    <option value="4">(B)巨大猢猻樹</option>
-                    <option value="5">(B)美味蘋果樹</option>
-                    <option value="6">(A)飄逸柳樹</option>
-                    <option value="7">(A)紫光藍花楹</option>
-                    <option value="8">(A)楓之谷楓樹</option>
-                    <option value="9">(S)櫻花處櫻樹</option>
-                    <option value="10">(S)埃羅汀月光樹</option>
-                    <option value="11">(S)阿爾卡納精靈樹</option>
+                    <option value="1" selected="selected">預設樹木 / Default</option>
+                    <option value="2">(B)鬱鬱杜松 / Juniper</option>
+                    <option value="3">(B)武陵檀香 / Mu Lung Juniper</option>
+                    <option value="4">(B)巨大猢猻樹 / Baobab Tree</option>
+                    <option value="5">(B)美味蘋果樹 / Delicious Apple Tree</option>
+                    <option value="6">(A)飄逸柳樹 / Willow</option>
+                    <option value="7">(A)紫光藍花楹 / Purple Jacaranda</option>
+                    <option value="8">(A)楓之谷楓樹 / Maple Tree</option>
+                    <option value="9">(S)櫻花處櫻樹 / Elluel Cherry Tree</option>
+                    <option value="10">(S)埃羅汀月光樹 / Elodin Moonlight Tree</option>
+                    <option value="11">(S)阿爾卡娜精靈樹 / Arcana Spirit Tree</option>
                 </select>
             </p>
-            <p>基座
+            <p>
+                基座 / Bases
                 <select id="baseSelect">
-                    <option value="0">隱藏基底</option>
-                    <option value="1" selected="selected">預設基底</option>
-                    <option value="2">(B)摩登黑色基底</option>
-                    <option value="3">(B)摩登白色基底</option>
-                    <option value="4">(B)簡單粉紅基底</option>
-                    <option value="5">(B)簡單黃色基底</option>
-                    <option value="6">(B)簡單天藍基底</option>
-                    <option value="7">(A)朵朵雲朵基底</option>
-                    <option value="8">(A)甜蜜棉花糖基底</option>
-                    <option value="9">(S)華麗寶石基底</option>
-                    <option value="10">(S)古典優雅基底</option>
-                    <option value="11">(S)古典發條音樂盒基底</option>
+                    <option value="0">隱藏基底 / Hide</option>
+                    <option value="1" selected="selected">預設基底 / Default</option>
+                    <option value="2">(B)摩登黑色基底 / Modern Black Base</option>
+                    <option value="3">(B)摩登白色基底 / Modern White Base</option>
+                    <option value="4">(B)簡單粉紅基底 / Simple Pink Base</option>
+                    <option value="5">(B)簡單黃色基底 / Simple Yellow Base</option>
+                    <option value="6">(B)簡單天藍基底 / Simple Sky Blue Base</option>
+                    <option value="7">(A)朵朵雲朵基底 / Fluffy Cloud Base</option>
+                    <option value="8">(A)甜蜜棉花糖基底 / Sweet Marshmallow Base</option>
+                    <option value="9">(S)華麗寶石基底 / Fancy Jewel Base</option>
+                    <option value="10">(S)古典優雅基底 / Classic Elegant Base</option>
+                    <option value="11">(S)古典發條音樂盒基底 / Classic Music Box Spring Base</option>
                 </select>
             </p>
-            
+            <p>
+                椅子 / Chairs
+                <select id="chairSelect">
+                    <option value="0" selected="selected">隱藏椅子 / Hide</option>
+                    <option value="1">(B)小石頭 / Small Rock</option>
+                    <option value="2">(B)小香菇 / Small Mushroom</option>
+                    <option value="3">(B)小椅凳 / Small Bench</option>
+                    <option value="4">(B)小吊床 / Small Stump</option>
+                    <option value="5">(B)露營椅 / Camping Chair</option>
+                    <option value="6">(A)小涼蓆 / Small Mat</option>
+                    <option value="7">(A)安逸的懶人枕 / Cozy Bean Bag Cushion</option>
+                    <option value="8">(A)蓬鬆雲朵椅子 / Soft Cloud Chair</option>
+                    <option value="9">(S)玩具噗噗椅子 / Toy Car Chair</option>
+                    <option value="10">(S)鞦韆椅子 / Swing Chair</option>
+                </select>
+            </p>
+            <!--
+            <p>
+                特效 / Effects
+                <select id="effectSelect">
+                    <option value="0" selected="selected">隱藏特效 / Hide</option>
+                    <option value="1">(B)小楓葉 / Small Maple Leaf</option>
+                    <option value="2">(B)小櫻花瓣 /  Small Cherry Petal</option>
+                    <option value="3">(B)小樹葉 / Small Leaf </option>
+                    <option value="4">(B)黃色月光粉末 / Yellow Moonlight Dust </option>
+                    <option value="5">(A)小雪花 / Small Snowflake</option>
+                    <option value="6">(A)點點光影 / Bubbly Mote of Light</option>
+                    <option value="7">(S)白色星光粉末 / White Starlight Dust</option>
+                    <option value="8">(S)灑落的藍色粉末 / Sprinkling Blue Dust</option>
+                    <option value="9">(S)五色光影 / Five-Color Mote of Light</option>
+                    <option value="10">(S)凍結光線碎片 / Prismatic Light Fragment </option>
+                </select>
+            </p>
+            <p>
+                公仔1(左) / Mini Figure 1 (L)
+                <select id="figure1Select">
+                    <option value="0" selected="selected">隱藏公仔 / Hide</option>
+                    <option value="1">(B)迷你菇菇寶貝 / Mini Orange Mushroom</option>
+                    <option value="2">(B)迷你緞帶肥肥 / Mini Ribbon Pig</option>
+                    <option value="3">(B)迷你企鵝王 / Mini Pepe</option>
+                    <option value="4">(B)小那因哈特 / Lil Neinheart</option>
+                    <option value="5">(A)小狂狼勇士 / Lil Aran</option>
+                    <option value="6">(A)小龍魔導士 / Lil Evan</option>
+                    <option value="7">(A)小愛麗西亞 / Lil Alicia</option>
+                    <option value="8">(A)小希拉 / Lil Hilla</option>
+                    <option value="9">(S)小幻影俠盜 / Lil Phantom</option>
+                    <option value="10">(S)小史烏 / Lil Lotus</option>
+                    <option value="11">(S)小露希妲 / Lil Lucid</option>
+                </select>
+            </p>
+            <p>
+                公仔2(右) / Mini Figure 2 (R)
+                <select id="figure2Select">
+                    <option value="0" selected="selected">隱藏公仔 / Hide</option>
+                    <option value="1">(B)迷你綠水靈 / Microslime</option>
+                    <option value="2">(B)迷你雪吉拉 / Microyeti</option>
+                    <option value="3">(B)迷你皮卡啾 / Mini Pink Bean</option>
+                    <option value="4">(B)小凡雷恩 / Lil Von Leon</option>
+                    <option value="5">(A)小精靈遊俠 / Lil Mercedes</option>
+                    <option value="6">(A)小夜光 / Lil Luminous</option>
+                    <option value="7">(A)小隱月 / Lil Shade</option>
+                    <option value="8">(S)小梅格耐斯 / Lil Magnus</option>
+                    <option value="9">(S)小西格諾斯 / Lil Cygnus</option>
+                    <option value="10">(S)小殺人鯨 / Lil Orchid</option>
+                    <option value="11">(S)小戴米安/ Lil Damien</option>
+                </select>
+            </p>-->
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script async defer src="main.js" ></script>
