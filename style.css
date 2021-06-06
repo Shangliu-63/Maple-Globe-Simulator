@@ -14,6 +14,12 @@ h1,p{
     margin: 0px 0px 0px 50px;
     position: relative;
 }
+
+#volSlider{
+    height:10px;
+    width:100px;
+    color: gray;
+}
 #glassBackImg{
     display: flex;
     justify-content: center;
@@ -44,6 +50,20 @@ h1,p{
     margin:69.5% auto;
     z-index: 1;
 }
+#chairImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    z-index: 2;
+}
 #characterImg{
     display: flex;
     justify-content: center;
@@ -56,8 +76,69 @@ h1,p{
     bottom: 0;  
     left: 0;  
     right: 0; 
-    margin:53.5% auto auto 41%;
+    margin: 24.5% auto auto 11%;
+    z-index: 3;
+}
+#emotionImg{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    margin: 24.5% auto auto 11%;
     z-index: 4;
+}
+#figure2Img{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    z-index: 6;
+}
+#figure1Img{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0; 
+    transform:scaleX(-1);
+    z-index: 6;
+}
+#effectImg{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;
+    margin: auto;
+    z-index: 7;
+
 }
 #glassFrontImg{
     display: flex;
@@ -89,72 +170,4 @@ h1,p{
     margin:77% auto;
     z-index: 9;
 }
-#chairImg{
-    display: flex;
-    justify-content: center;
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0; 
-    z-index: 3;
-}
 
-#figure1Img{
-    display: flex;
-    justify-content: center;
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0; 
-    transform:scaleX(-1);
-    z-index: 6;
-}
-
-#figure2Img{
-    display: flex;
-    justify-content: center;
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0; 
-    z-index: 6;
-}
-
-#effectImg{
-    display: flex;
-    display: flex;
-    justify-content: center;
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;
-    margin: auto;
-    z-index: 7;
-
-}
-
-#volSlider{
-    height:10px;
-    width:100px;
-    color: gray;
-}

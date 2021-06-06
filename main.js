@@ -1,9 +1,11 @@
 $(function(){
     $("#characterAppear").on("click",function(){
-        $("#characterImg").attr("src","character/model.png");
+        $("#characterImg").show();
+        $("#emotionImg").show();
     });
     $("#characterHide").on("click",function(){
-        $("#characterImg").attr("src","");
+        $("#characterImg").hide();
+        $("#emotionImg").hide();
     });
     /*$("#downloadImg").on("click",function(){
         html2canvas($("#mainview"),{
@@ -186,16 +188,112 @@ $(function(){
         };
     });
 
+    $("#poseSelect").on("change", function(){
+        let figure2Value = parseInt($(this).val());
+        switch(figure2Value){
+            case 0:
+                $("#characterImg").attr("src","character/stand.png");
+                $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 24.5% auto auto 11%");
+                break;
+            case 1:
+                $("#characterImg").attr("src","character/catch breath.png");
+                $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 25.25% auto auto 11%");
+                break;
+            case 2:
+                if($("#chairImg").attr("src")==""){
+                    alert("請先選擇椅子/please select a chair first");
+                    $("#poseSelect").val(0);
+                    $("#characterImg").attr("src","character/stand.png");
+                    $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
+                    $("#emotionImg").attr("style","margin: 24.5% auto auto 11%");
+                    break;
+                }/**/
+                $("#characterImg").attr("src","character/sit.png");
+                $("#characterImg").attr("style","margin: 24.5% auto auto 16%");
+                $("#emotionImg").attr("style","margin: 25.5% auto auto 16.75%");
+                break;
+            case 3:
+                $("#characterImg").attr("src","character/jump.png");
+                $("#characterImg").attr("style","margin: 20% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 20.5% auto auto 11%");
+                break;
+            case 4:
+                $("#characterImg").attr("src","character/fly.png");
+                $("#characterImg").attr("style","margin: 18% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 16.75% auto auto 11%");
+                break;
+            case 5:
+                $("#characterImg").attr("src","character/ghost.png");
+                $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 25.5% auto auto 11.75%");
+                break;
+            default:
+                alert("none of this character name");
+                break;
+        };
+    });
+
+    $("#ExpressionSelect").on("change", function(){
+        let chairValue = parseInt($(this).val());
+        switch(chairValue){
+            case 0:
+                $("#emotionImg").attr("src","");
+                break;
+            case 1:
+                $("#emotionImg").attr("src","character/emotion/smile.png");
+                break;
+            case 2:
+                $("#emotionImg").attr("src","character/emotion/cry.png");
+                break;
+            case 3:
+                $("#emotionImg").attr("src","character/emotion/angry.png");
+                break;
+            case 4:
+                $("#emotionImg").attr("src","character/emotion/stunned.png");
+                break;
+            case 5:
+                $("#emotionImg").attr("src","character/emotion/troubled.png");
+                break;
+            case 6:
+                $("#emotionImg").attr("src","character/emotion/googly.png");
+                break;
+            case 7:
+                $("#emotionImg").attr("src","character/emotion/sparkling.png");
+                break;
+            case 8:
+                $("#emotionImg").attr("src","character/emotion/excited.png");
+                break;
+            case 9:
+                $("#emotionImg").attr("src","character/emotion/smooch.png");
+                break;
+            case 10:
+                $("#emotionImg").attr("src","character/emotion/goo goo.png");
+                break;
+            case 11:
+                $("#emotionImg").attr("src","character/emotion/wink.png");
+                break;
+            case 12:
+                $("#emotionImg").attr("src","character/emotion/zzz.png");
+                break;
+            default:
+                alert("none of this chair name");
+                break;
+        };
+    });
+
     $("#chairSelect").on("change", function(){
         let chairValue = parseInt($(this).val());
         switch(chairValue){
             case 0:
                 $("#chairImg").attr("src","");
-                $("#chairImg").attr("style","margin: auto");
+                //$("#chairImg").attr("style","margin: 0");
+                $("#chairImg").hide();
                 break;
             case 1:
                 $("#chairImg").attr("src","chair/smallrock.png");
-                $("#chairImg").attr("style","margin: 68.5% auto auto 46%");
+                $("#chairImg").attr("style","margin: 68.5% auto auto 47%");
                 break;
             case 2:
                 $("#chairImg").attr("src","chair/smallmushroom.png");
@@ -207,15 +305,15 @@ $(function(){
                 break;
             case 4:
                 $("#chairImg").attr("src","chair/smallstump.png");
-                $("#chairImg").attr("style","margin: 63.5% auto auto 43%");
+                $("#chairImg").attr("style","margin: 63.5% auto auto 44%");
                 break;
             case 5:
                 $("#chairImg").attr("src","chair/campingchair.png");
-                $("#chairImg").attr("style","margin: 61% auto auto 44%");
+                $("#chairImg").attr("style","margin: 61% auto auto 48%");
                 break;
             case 6:
                 $("#chairImg").attr("src","chair/smallmat.png");
-                $("#chairImg").attr("style","margin: 64% auto auto 38%");
+                $("#chairImg").attr("style","margin: 64% auto auto 38%; z-index: 5");
                 break;
             case 7:
                 $("#chairImg").attr("src","chair/cushion.png");
