@@ -50,7 +50,7 @@ $(function(){
                 break;
             case 7:
                 $("#baseImg").attr("src","base/FluffyCloudBase.png");
-                $("#baseImg").attr("style","margin: 74% auto");
+                $("#baseImg").attr("style","margin: 75% auto");
                 break;
             case 8:
                 $("#baseImg").attr("src","base/sweetMarshmallow.png");
@@ -209,7 +209,7 @@ $(function(){
                     $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
                     $("#emotionImg").attr("style","margin: 24.5% auto auto 11%");
                     break;
-                }/**/
+                }
                 $("#characterImg").attr("src","character/sit.png");
                 $("#characterImg").attr("style","margin: 24.5% auto auto 16%");
                 $("#emotionImg").attr("style","margin: 25.5% auto auto 16.75%");
@@ -288,7 +288,6 @@ $(function(){
         switch(chairValue){
             case 0:
                 $("#chairImg").attr("src","");
-                //$("#chairImg").attr("style","margin: 0");
                 $("#chairImg").hide();
                 break;
             case 1:
