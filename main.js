@@ -532,6 +532,7 @@ $(function(){
             "background-position": "0px -37px"
           })
           break;
+<<<<<<< HEAD
           case 6:
             $("#mainview").css({
                 "background-image": "url(background/arcana.jpg)",
@@ -562,6 +563,8 @@ $(function(){
                 "background-position": "0px -52px"
                 })
             break;
+=======
+>>>>>>> 6535433e78ed4b3f75715d4bc387588eea6f8b9c
         default:
           alert("none of this figure1 name");
           break;
