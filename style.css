@@ -8,7 +8,6 @@ h1 {
   color:azure;
   text-align: center;
   margin: 4rem;
-<<<<<<< HEAD
 }
 
 h5{
@@ -41,9 +40,6 @@ select, input {
   align-items: center;
 }
 
-=======
-}
-
 p {
   color:azure;
   font-size: 20px;
@@ -68,7 +64,6 @@ select, input {
   align-items: center;
 }
 
->>>>>>> 6535433e78ed4b3f75715d4bc387588eea6f8b9c
 #mainview{
     width: 400px;
     height: 400px;
