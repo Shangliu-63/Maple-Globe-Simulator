@@ -562,8 +562,21 @@ $(function(){
                 "background-position": "0px -52px"
                 })
             break;
+        case 11:
+            $("#mainview").css({
+                "background-image": "url(background/cygnusgarden.jpg)",
+                "background-position": "0px -52px"
+                })
+            break;
+        case 12:
+            $("#mainview").css({
+                "background-image": "url(background/ali.jpg)",
+                "background-position": "0px -52px"
+                })
+            break;
+    
         default:
-          alert("none of this figure1 name");
+          alert("none of this background name");
           break;
       };
   });
