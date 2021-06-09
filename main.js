@@ -492,6 +492,82 @@ $(function(){
         };
     });
 
+    $("#backgroundSelect").on("change", function(){
+      let backgroundValue = parseInt($(this).val());
+      switch(backgroundValue){
+        case 0:
+          $("#mainview").css({
+            "background-image": "url()",
+            "background-position": "0px 0px",
+            "background-color": ""
+          })
+          break;
+        case 1:
+        $("#mainview").css({
+          "background-image": "url()",
+          "background-color": "black"
+        })
+          break;
+        case 2:
+          $("#mainview").css({
+            "background-image": "url(background/maple-leaf.jpg)",
+            "background-position": "0px -50px"
+          })
+            break;
+        case 3:
+          $("#mainview").css({
+            "background-image": "url(background/sky.jpeg)",
+            "background-position": "0px -57px"
+          })
+            break;
+        case 4:
+          $("#mainview").css({
+            "background-image": "url(background/ellinia.jpg)",
+            "background-position": "0px -50px"
+          })
+          break;
+        case 5:
+          $("#mainview").css({
+            "background-image": "url(background/ludibrium.jpg)",
+            "background-position": "0px -37px"
+          })
+          break;
+          case 6:
+            $("#mainview").css({
+                "background-image": "url(background/arcana.jpg)",
+                "background-position": "0px -45px"
+              })
+            break;
+        case 7:
+            $("#mainview").css({
+                "background-image": "url(background/esfera.jpg)",
+                "background-position": "0px -37px"
+                })
+            break;
+        case 8:
+            $("#mainview").css({
+                "background-image": "url(background/sellas.jpg)",
+                "background-position": "0px -45px"
+                })
+            break;
+        case 9:
+            $("#mainview").css({
+                "background-image": "url(background/abyss1.jpg)",
+                "background-position": "0px -52px"
+                })
+            break;
+        case 10:
+            $("#mainview").css({
+                "background-image": "url(background/abyss2.jpg)",
+                "background-position": "0px -52px"
+                })
+            break;
+        default:
+          alert("none of this figure1 name");
+          break;
+      };
+  });
+
     $("#bgmSelect").on("change", function(){
         let bgmValue = parseInt($(this).val());
         switch(bgmValue){
@@ -593,7 +669,7 @@ $(function(){
         create: function(e, ui) {
           var style={"width":"30px","text-align":"center"};
           $(this).find(".ui-slider-handle").css(style);
-          css();
+          // css();
           },
         slide: function(e, ui) {
           $("#hslider_value").html(ui.value);
