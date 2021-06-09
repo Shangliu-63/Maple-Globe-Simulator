@@ -574,6 +574,24 @@ $(function(){
                 "background-position": "0px -52px"
                 })
             break;
+        case 13:
+            $("#mainview").css({
+                "background-image": "url(background/timetemple.jpg)",
+                "background-position": "0px -50px"
+                })
+            break;
+        case 14:
+            $("#mainview").css({
+                "background-image": "url(background/foxvalley.jpg)",
+                "background-position": "0px -60px"
+                })
+            break;
+        case 15:
+            $("#mainview").css({
+                "background-image": "url(background/folktown.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
     
         default:
           alert("none of this background name");
