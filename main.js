@@ -593,7 +593,7 @@ $(function(){
         create: function(e, ui) {
           var style={"width":"30px","text-align":"center"};
           $(this).find(".ui-slider-handle").css(style);
-          css();
+          // css();
           },
         slide: function(e, ui) {
           $("#hslider_value").html(ui.value);
