@@ -622,6 +622,12 @@ $(function(){
             "background-position": "0px -48px"
             })
         break;
+        case 21:
+        $("#mainview").css({
+            "background-image": "url(background/cernium.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
 
         default:
           alert("none of this background name");
