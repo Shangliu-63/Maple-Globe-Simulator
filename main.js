@@ -592,7 +592,37 @@ $(function(){
                 "background-position": "0px -48px"
                 })
             break;
-    
+        case 16:
+        $("#mainview").css({
+            "background-image": "url(background/elluel1.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
+        case 17:
+        $("#mainview").css({
+            "background-image": "url(background/elluel2.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
+        case 18:
+        $("#mainview").css({
+            "background-image": "url(background/mushroomshrine.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
+        case 19:
+        $("#mainview").css({
+            "background-image": "url(background/henesys.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
+        case 20:
+        $("#mainview").css({
+            "background-image": "url(background/namelesstown.jpg)",
+            "background-position": "0px -48px"
+            })
+        break;
+
         default:
           alert("none of this background name");
           break;
