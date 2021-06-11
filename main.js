@@ -38,15 +38,15 @@ $(function(){
                 break;
             case 4:
                 $("#baseImg").attr("src","base/simplePinkBase.png");
-                $("#baseImg").attr("style","margin: 75.5% 23.5%");
+                $("#baseImg").attr("style","margin: 75.75% 23.5%");
                 break;
             case 5:
                 $("#baseImg").attr("src","base/simpleYellowBase.png");
-                $("#baseImg").attr("style","margin: 75.5% 23.5%");
+                $("#baseImg").attr("style","margin: 75.75% 23.5%");
                 break;
             case 6:
                 $("#baseImg").attr("src","base/simpleSkyblueBase.png");
-                $("#baseImg").attr("style","margin: 75.5% 23.5%");
+                $("#baseImg").attr("style","margin: 75.75% 23.5%");
                 break;
             case 7:
                 $("#baseImg").attr("src","base/FluffyCloudBase.png");
@@ -54,7 +54,7 @@ $(function(){
                 break;
             case 8:
                 $("#baseImg").attr("src","base/sweetMarshmallow.png");
-                $("#baseImg").attr("style","margin: 73% auto");
+                $("#baseImg").attr("style","margin: 71.5% auto");
                 break;
             case 9:
                 $("#baseImg").attr("src","base/FancyJewelBase.png");
@@ -226,8 +226,8 @@ $(function(){
                 break;
             case 5:
                 $("#characterImg").attr("src","character/ghost.png");
-                $("#characterImg").attr("style","margin: 24.5% auto auto 11%");
-                $("#emotionImg").attr("style","margin: 25.5% auto auto 11.75%");
+                $("#characterImg").attr("style","margin: 22.5% auto auto 11%");
+                $("#emotionImg").attr("style","margin: 23.5% auto auto 11.75%");
                 break;
             default:
                 alert("none of this character name");
@@ -593,45 +593,98 @@ $(function(){
                 })
             break;
         case 16:
-        $("#mainview").css({
-            "background-image": "url(background/elluel1.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
+            $("#mainview").css({
+                "background-image": "url(background/elluel1.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
         case 17:
-        $("#mainview").css({
-            "background-image": "url(background/elluel2.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
+            $("#mainview").css({
+                "background-image": "url(background/elluel2.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
         case 18:
-        $("#mainview").css({
-            "background-image": "url(background/mushroomshrine.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
+            $("#mainview").css({
+                "background-image": "url(background/mushroomshrine.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
         case 19:
-        $("#mainview").css({
-            "background-image": "url(background/henesys.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
+            $("#mainview").css({
+                "background-image": "url(background/henesys.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
         case 20:
-        $("#mainview").css({
-            "background-image": "url(background/namelesstown.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
+            $("#mainview").css({
+                "background-image": "url(background/namelesstown.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
         case 21:
-        $("#mainview").css({
-            "background-image": "url(background/cernium.jpg)",
-            "background-position": "0px -48px"
-            })
-        break;
-
+            $("#mainview").css({
+                "background-image": "url(background/cernium.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
+        case 22:
+            $("#mainview").css({
+                "background-image": "url(background/pantheon.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
+        case 23:
+            $("#mainview").css({
+                "background-image": "url(background/asylum.jpg)",
+                "background-position": "0px -90px"
+                })
+            break;
+        case 24:
+            $("#mainview").css({
+                "background-image": "url(background/ereb.jpg)",
+                "background-position": "0px -90px"
+                })
+            break;
+        case 25:
+            $("#mainview").css({
+                "background-image": "url(background/elodin.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
+        case 26:
+            $("#mainview").css({
+                "background-image": "url(background/moras.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;
+        case 27:
+            $("#mainview").css({
+                "background-image": "url(background/eveningprimose.jpg)",
+                "background-position": "0px -90px"
+                })
+            break;
+        case 28:
+            $("#mainview").css({
+                "background-image": "url(background/rude.jpg)",
+                "background-position": "0px -70px"
+                })
+            break;
+        case 29:
+            $("#mainview").css({
+                "background-image": "url(background/monad.jpg)",
+                "background-position": "0px -55px"
+                })
+            break;
+        case 30:
+            $("#mainview").css({
+                "background-image": "url(background/rabbitdream.jpg)",
+                "background-position": "0px -48px"
+                })
+            break;   
         default:
-          alert("none of this background name");
-          break;
+            alert("none of this background name");
+            break;
       };
   });
 
